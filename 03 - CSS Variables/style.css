@@ -4,11 +4,20 @@
 
 body {
   text-align: center;
-  background: #193549;
-  color: white;
-  font-family: 'helvetica neue', sans-serif;
+  background: #f7f7f7;
+  color: #f7f7f7;
+  font-family: 'Raleway', sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 20px;
+}
+
+h2 {
+  display: inline-block;
+  background-color: #494949;
+}
+
+label {
+  color: #494949;
 }
 
 .controls {
@@ -17,4 +26,8 @@ body {
 
 input {
   width: 100px;
+}
+
+img {
+  width: 70vw;
 }
