@@ -3,77 +3,46 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
   <title>JS + CSS Clock</title>
 </head>
-
-<style>
-  html {
-    background: 
-      linear-gradient( 
-        rgba(0, 0, 0, 0.43),  
-        rgba(0, 0, 0, 0.43)
-      ), 
-      url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80') center center;
-    background-size: cover;
-    font-family: 'helvetica neue';
-    text-align: center;
-    font-size: 10px;
-  }
-
-  body {
-    margin: 0;
-    font-size: 2rem;
-    display: flex;
-    flex: 1;
-    min-height: 100vh;
-    align-items: center;
-  }
-
-  .clock {
-    width: 30rem;
-    height: 30rem;
-    border: 10px solid #e9e6e6;
-    border-radius: 50%;
-    margin: 50px auto;
-    position: relative;
-    padding: 2rem;
-    /* box-shadow:
-      0 0 0 4px rgba(0,0,0,0.1),
-      inset 0 0 0 3px #EFEFEF,
-      inset 0 0 10px black,
-      0 0 10px rgba(0,0,0,0.2);
-    */
-  }
-
-  .clock-face {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-3px); /* account for the height of the clock hands */
-  }
-
-  .hand {
-    width: 50%;
-    height: 6px;
-    background: #e9e6e6;
-    position: absolute;
-    top: 50%;
-  }
-</style>
 
 <body>
   <div class="clock">
     <div class="clock-face">
-      <div class="hand hour-hand"></div>
-      <div class="hand min-hand"></div>
-      <div class="hand second-hand"></div>
+      <div class="hour"></div>
+      <div class="minute"></div>
+      <div class="second"></div>
+      <div class="dot"></div>
     </div>
   </div>
 </body>
   
 <script>
+  const secondHand = document.querySelector('.second');
+  const minuteHand = document.querySelector('.minute');
+  const hourHand = document.querySelector('.hour');
 
+  function setDate() {
+    const now = new Date();
+    // seconds
+    const seconds = now.getSeconds();
+    const secondsDegrees = ((seconds / 60) * 360);
+    // minutes
+    const minutes = now.getMinutes();
+    const minutesDegrees = ((minutes / 60) * 360);
+    // hours
+    const hours = now.getHours();
+    const hoursDegrees = ((hours / 12) * 360);
+    
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+    minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+    hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+    
+    console.log(hoursDegrees);
+  }
 
+  setInterval(setDate, 1000);
 </script>
 </body>
 </html>
