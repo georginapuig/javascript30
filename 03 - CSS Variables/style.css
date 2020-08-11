@@ -9,6 +9,7 @@ img {
   background: var(--base);
   padding: var(--spacing);
   filter: blur(var(--blur));
+  margin-bottom: 20px;
 }
 
 body {
