@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
-  background: #ffc600;
-  font-family: 'helvetica neue';
+  background: #ebeae6;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 .panel {
-  background: #6B0F9C;
+  background: #e5e3e6;
   box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
   color: white;
   text-align: center;
@@ -36,11 +36,11 @@ body {
   background-position: center;
 }
 
-.panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-.panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-.panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-.panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-.panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+.panel1 { background-image:url(https://images.unsplash.com/photo-1582045253062-f63cfbd45bcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80); }
+.panel2 { background-image:url(https://images.unsplash.com/photo-1516830245025-eebd5839eae8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1494&q=80); }
+.panel3 { background-image:url(https://images.unsplash.com/photo-1512119587817-57d771d650c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80); }
+.panel4 { background-image:url(https://images.unsplash.com/photo-1523981819435-e572fbbb4d74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80); }
+.panel5 { background-image:url(https://images.unsplash.com/photo-1465217787303-8f029c50d092?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80); }
 
 /* Flex Children */
 .panel > * {
@@ -51,8 +51,6 @@ body {
 
 .panel p {
   text-transform: uppercase;
-  font-family: 'Amatic SC', cursive;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 2em;
 }
 
