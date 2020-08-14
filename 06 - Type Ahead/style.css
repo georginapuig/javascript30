@@ -13,6 +13,7 @@ html {
 input {
   width: 100%;
   padding: 20px;
+  color: #d3c09a;
 }
 
 .search-form {
@@ -53,6 +54,7 @@ input.search {
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
+  color: #797a7e;
 }
 
 .suggestions li:nth-child(even) {
@@ -70,5 +72,5 @@ span.population {
 }
 
 .hl {
-  background: #ffc600;
+  background: #e7d4af;
 }
