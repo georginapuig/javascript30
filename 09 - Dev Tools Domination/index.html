@@ -9,7 +9,7 @@
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
 
   <script>
-    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    const dogs = [{ name: 'snickers', age: 2 }, { name: 'hugo', age: 8 }];
     const p = document.querySelector('p');
 
     function makeGreen() {
@@ -48,14 +48,23 @@
     // Grouping together
     dogs.forEach(dog => {
       console.groupCollapsed(`${dog.name}`);
+
       console.log(`This is ${dog.name}`);
       console.log(`${dog.name} is ${dog.age} years old`);
       console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+
       console.groupEnd(`${dog.name}`);
     });
 
     // counting
-
+    console.count('Front');
+    console.count('Front');
+    console.count('Front');
+    console.count('Back');
+    console.count('Front');
+    console.count('Front');
+    console.count('Back');
+    console.count('Front');
 
     // timing
 
