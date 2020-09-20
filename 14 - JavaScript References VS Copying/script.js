@@ -42,7 +42,7 @@ const team5 = Array.from(players);
 
 // with Objects
 const person = {
-name: 'Wes Bos',
+name: 'georgina',
 age: 80
 };
 
