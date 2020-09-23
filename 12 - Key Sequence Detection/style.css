@@ -9,8 +9,14 @@ body {
 }
 
 h1 {
-  padding-top: calc(50vh - 16px);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: calc(50vh - 16px);
   font-size: 24px;
-  color: rgb(184, 211, 150)
+  color: rgb(184, 211, 150);
+  transition: .4s
+}
 
+h1:hover {
+  color: rgba(205, 211, 150, 0.9);
 }
