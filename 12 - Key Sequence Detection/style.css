@@ -1,0 +1,16 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: #f7f7f7;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  padding-top: calc(50vh - 16px);
+  font-size: 24px;
+  color: rgb(184, 211, 150)
+
+}
