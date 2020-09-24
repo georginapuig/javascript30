@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
-  background: #ffc600;
-  font-family: 'helvetica neue';
-  font-size: 20px;
-  font-weight: 200;
+  background: #b0a992;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
 }
 
 h1 {
+  color: #494949;
   margin-top: 0;
 }
 
