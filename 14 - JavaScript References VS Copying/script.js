@@ -16,7 +16,7 @@ const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 // and we want to make a copy of it.
 const team = players;
 // You might think we can just do something like this:
-team[3] = 'Lux';
+// team[3] = 'Lux';
 // however what happens when we update that array?
 // copy by reference
 console.log(players, team); // [ 'Wes', 'Sarah', 'Ryan', 'Lux' ] [ 'Wes', 'Sarah', 'Ryan', 'Lux' ]
