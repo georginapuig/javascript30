@@ -13,13 +13,13 @@ console.log(name, name2); // geo georgina
 
 // Let's say we have an array
 const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
-
 // and we want to make a copy of it.
-
+const team = players;
 // You might think we can just do something like this:
-
+team[3] = 'Lux';
 // however what happens when we update that array?
-
+// copy by reference
+console.log(players, team); // [ 'Wes', 'Sarah', 'Ryan', 'Lux' ] [ 'Wes', 'Sarah', 'Ryan', 'Lux' ]
 // now here is the problem!
 
 // oh no - we have edited the original array too!
@@ -51,3 +51,4 @@ age: 80
 // We will hopefully soon see the object ...spread
 
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+  
