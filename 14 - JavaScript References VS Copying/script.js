@@ -27,7 +27,7 @@ console.log(players, team); // [ 'Wes', 'Sarah', 'Ryan', 'Lux' ] [ 'Wes', 'Sarah
 // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
 // So, how do we fix this? We take a copy instead!
-
+const team2 = players.slice();
 // one way
 
 // or create a new array and concat the old one in
