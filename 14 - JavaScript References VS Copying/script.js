@@ -37,7 +37,7 @@ const team4 = [...players];
 team4[3] = 'heeee hawww';
 console.log(team4);
 // now when we update it, the original one isn't changed
-
+const team5 = Array.from(players);
 // The same thing goes for objects, let's say we have a person object
 
 // with Objects
