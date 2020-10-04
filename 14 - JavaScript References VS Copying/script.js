@@ -31,7 +31,7 @@ const team2 = players.slice();
 // one way
 
 // or create a new array and concat the old one in
-
+const team3 = [].concat(players);
 // or use the new ES6 Spread
 
 // now when we update it, the original one isn't changed
