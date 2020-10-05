@@ -47,7 +47,8 @@ age: 28
 };
 
 // and think we make a copy:
-
+const captain = person;
+captain.number = 99;
 // how do we take a copy instead?
 
 // We will hopefully soon see the object ...spread
