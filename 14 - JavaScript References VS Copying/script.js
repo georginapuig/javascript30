@@ -43,7 +43,7 @@ const team5 = Array.from(players);
 // with Objects
 const person = {
 name: 'georgina',
-age: 80
+age: 28
 };
 
 // and think we make a copy:
