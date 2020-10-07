@@ -33,7 +33,9 @@ const team2 = players.slice();
 // or create a new array and concat the old one in
 const team3 = [].concat(players);
 // or use the new ES6 Spread
-
+const team4 = [...players];
+team4[3] = 'heeee hawww';
+console.log(team4);
 // now when we update it, the original one isn't changed
 
 // The same thing goes for objects, let's say we have a person object
