@@ -15,8 +15,8 @@ function addItem(e) {
   this.reset();
 }
 
-function populateList(plates = [], placeList) {
-  placeList.innerHTML = plates.map().join('');
+function populateList(platesList, plates = []) {
+  platesList.innerHTML = plates.map().join('');
 }
 
 addItems.addEventListener('submit', addItem);
