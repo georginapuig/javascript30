@@ -1,6 +1,6 @@
 const addItems = document.querySelector('.add-items');
 const itemsList = document.querySelector('.plates');
-const items = [];
+const items = JSON.parse(localStorage.getItem('items')) || [];
 
 function addItem(e) {
   e.preventDefault(); // stop the page from reloading
@@ -12,7 +12,8 @@ function addItem(e) {
   };
 
   items.push(item);
-  populateList(items, itemslist);
+  populateList(itemsList, items);
+  localStorage.setItem('items', JSON.stringify(items));
   this.reset();
 }
 
@@ -28,3 +29,5 @@ function populateList(platesList, plates = []) {
 }
 
 addItems.addEventListener('submit', addItem);
+
+populateList(items, itemsList);
